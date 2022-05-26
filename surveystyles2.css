@@ -1,0 +1,86 @@
+/*STYLES FOR MY SURVEY*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: borderbox;
+}
+/*I AM ADDING PADDING TO THE BODY; REMOVE THE PADDING ONCE I START WORKING ON MY HOMEWORK*/
+
+
+body {
+    background: lightslategray;
+    padding: 50px 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: navy;
+}
+
+form {
+    max-width: 580px;
+    font: navy;
+    margin: 20px auto;
+}
+fieldset {
+    padding:10px;
+    border-radius:5px;
+}
+legend {
+    font-size:1.4em;
+    font-style: italic;
+    padding:8px;
+    background: whitesmoke;
+    border-radius:5px;
+}
+
+/*the label is an inline element, so we use display block to place it in a block format*/
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+/*below my input, I need some space*/
+/*to make the input white box taller, increase the height*/
+/*to make the input white box wider, add "width: 100%"*/
+input {
+    margin-bottom: 10px;
+    height: 30px;
+    width: 100%;
+}
+/*"type=submit in brackets is called an attribute selector*/
+/*when you establish a width of auto it will be as big as the content "send it"; it will enlarge as you add text*/
+input[type="radio"],
+input[type="checkbox"]{
+    width: auto;
+    height: auto;
+    margin-bottom: 5px;
+    margin-right: 3px;
+}
+input[type="submit"]{
+    width: auto;
+}
+select {
+    margin-bottom:10px;
+}
+
+/*Remove bullets*/
+ul, ol {
+    list-style-type: none;
+    margin-left: 8px;
+    margin-bottom: 10px;  
+}
+
+/*The COMMENTS box is called a text area*/
+textarea {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: purple;
+    font-size: 3em;
+}
+
+h2, h3, h4, h5, h6, p {
+    color: navy;
+}
+
