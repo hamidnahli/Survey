@@ -8,9 +8,6 @@
 
 
 <body>
-<!--THE FORM WILL NOT WORK UNTIL IT IS UPLOADED ONTO THE SERVER. -->
-<!--THE FORMHANDLER THAT WE WILL BE DOWNLOADING IS USING PHP -- hypertext preprocessor -- WILL ONLY WORK ON A SERVER, NOT LOCALLY -->
-
     <form action="insert.php" method="post">
         <h1>Software Survey</h1>
         
@@ -21,384 +18,235 @@
 
         <label>Name (optional)</label>
         <input type="text" name="name">
-        <label>Email (optional)</label>
+        <label>Email</label>
         <input type="email" name="email"> 
 
         <h4>On a scale of 1 (not important) to 10 (very important), how important do you think each software language is TODAY?</h4>
-
-        <label>1. C#</label>
-        <select>
-            <option value="null">Select one:</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-        </select>
-        
-
+        <label>1. CShap</label>
+        <fieldset id="cshap">
+            <!-- <legend>C#</legend> -->
+            <input type="radio" name="cshap" value="1" checked>1
+            <input type="radio" name="cshap" value="2">2
+            <input type="radio" name="cshap" value="3">3
+            <input type="radio" name="cshap" value="4">4
+            <input type="radio" name="cshap" value="5">5
+        </fieldset>
         <label>2. CSS</label>
-        <select>
-            <option value="null">Select one:</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-        </select>
-        
+        <fieldset id="css">
+            <!-- <legend>CSS</legend> -->
+            <input type="radio" name="css" value="1" checked>1
+            <input type="radio" name="css" value="2">2
+            <input type="radio" name="css" value="3">3
+            <input type="radio" name="css" value="4">4
+            <input type="radio" name="css" value="5">5
+        </fieldset>
         <label>3. Go</label>
-        <select>
-            <option value="null">Select one:</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-        </select>
+        <fieldset id="go">
+            <input type="radio" name="go" value="1" checked>1
+            <input type="radio" name="go" value="2">2
+            <input type="radio" name="go" value="3">3
+            <input type="radio" name="go" value="4">4
+            <input type="radio" name="go" value="5">5
+        </fieldset>
 
         <label>4. HTML</label>
-        <select>
-            <option value="null">Select one:</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-        </select>
+        <fieldset id="html">
+            <input type="radio" name="html" value="1" checked>1
+            <input type="radio" name="html" value="2">2
+            <input type="radio" name="html" value="3">3
+            <input type="radio" name="html" value="4">4
+            <input type="radio" name="html" value="5">5
+        </fieldset>
 
         <label>5. Java</label>
-        <select>
-            <option value="null">Select one:</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-        </select>
+        <fieldset id="java">
+            <input type="radio" name="java" value="1" checked>1
+            <input type="radio" name="java" value="2">2
+            <input type="radio" name="java" value="3">3
+            <input type="radio" name="java" value="4">4
+            <input type="radio" name="java" value="5">5
+        </fieldset>
 
         <label>6. JavaScript</label>
-        <select>
-            <option value="null">Select one:</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-        </select>
+        <fieldset id="javascript">
+            <input type="radio" name="javascript" value="1" checked>1
+            <input type="radio" name="javascript" value="2">2
+            <input type="radio" name="javascript" value="3">3
+            <input type="radio" name="javascript" value="4">4
+            <input type="radio" name="javascript" value="5">5
+        </fieldset>
 
         <label>7. NoSQL</label>
-        <select>
-            <option value="null">Select one:</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-        </select>
+        <fieldset id="nosql">
+            <input type="radio" name="nosql" value="1" checked>1
+            <input type="radio" name="nosql" value="2">2
+            <input type="radio" name="nosql" value="3">3
+            <input type="radio" name="nosql" value="4">4
+            <input type="radio" name="nosql" value="5">5
+        </fieldset>
 
         <label>8. Perl</label>
-        <select>
-            <option value="null">Select one:</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-        </select>
+        <fieldset id="perl">
+            <input type="radio" name="perl" value="1" checked>1
+            <input type="radio" name="perl" value="2">2
+            <input type="radio" name="perl" value="3">3
+            <input type="radio" name="perl" value="4">4
+            <input type="radio" name="perl" value="5">5
+        </fieldset>
 
         <label>9. Python</label>
-        <select>
-            <option value="null">Select one:</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-        </select>
+        <fieldset id="python">
+            <input type="radio" name="python" value="1" checked>1
+            <input type="radio" name="python" value="2">2
+            <input type="radio" name="python" value="3">3
+            <input type="radio" name="python" value="4">4
+            <input type="radio" name="python" value="5">5
+        </fieldset>
 
         <label>10. Rust</label>
-        <select>
-            <option value="null">Select one:</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-        </select>
+        <fieldset id="rust">
+            <input type="radio" name="rust" value="1" checked>1
+            <input type="radio" name="rust" value="2">2
+            <input type="radio" name="rust" value="3">3
+            <input type="radio" name="rust" value="4">4
+            <input type="radio" name="rust" value="5">5
+        </fieldset>
 
         <label>11. SQL</label>
-        <select>
-            <option value="null">Select one:</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-        </select>
+        <fieldset id="sql">
+            <input type="radio" name="sql" value="1" checked>1
+            <input type="radio" name="sql" value="2">2
+            <input type="radio" name="sql" value="3">3
+            <input type="radio" name="sql" value="4">4
+            <input type="radio" name="sql" value="5">5
+        </fieldset>
 
         <label>12. Other</label>
-        <select>
-            <option value="null">Select one:</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-        </select>
+        <fieldset id="other">
+            <input type="radio" name="other" value="1" checked>1
+            <input type="radio" name="other" value="2">2
+            <input type="radio" name="other" value="3">3
+            <input type="radio" name="other" value="4">4
+            <input type="radio" name="other" value="5">5
+        </fieldset>
 
         <label>If you chose "Other" please specify which language you chose:</label>
         <textarea name="comments"></textarea>
-
-        <h4>On a scale of 1 (not important) to 10 (very important), how important do you think each software language will be IN 5 YEARS?</h4>
-
-        <label>1. C#</label>
-        <select>
-            <option value="null">Select one:</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-        </select>
-        
-
+        <h4>On a scale of 1 (not important) to 10 (very important), how important do you think each software language in 10 years from now?</h4>
+        <label>1. CShap</label>
+        <fieldset id="cshap">
+            <!-- <legend>C#</legend> -->
+            <input type="radio" name="cshap" value="1" checked>1
+            <input type="radio" name="cshap" value="2">2
+            <input type="radio" name="cshap" value="3">3
+            <input type="radio" name="cshap" value="4">4
+            <input type="radio" name="cshap" value="5">5
+        </fieldset>
         <label>2. CSS</label>
-        <select>
-            <option value="null">Select one:</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-        </select>
-        
+        <fieldset id="css">
+            <!-- <legend>CSS</legend> -->
+            <input type="radio" name="css" value="1" checked>1
+            <input type="radio" name="css" value="2">2
+            <input type="radio" name="css" value="3">3
+            <input type="radio" name="css" value="4">4
+            <input type="radio" name="css" value="5">5
+        </fieldset>
         <label>3. Go</label>
-        <select>
-            <option value="null">Select one:</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-        </select>
+        <fieldset id="go">
+            <input type="radio" name="go" value="1" checked>1
+            <input type="radio" name="go" value="2">2
+            <input type="radio" name="go" value="3">3
+            <input type="radio" name="go" value="4">4
+            <input type="radio" name="go" value="5">5
+        </fieldset>
 
         <label>4. HTML</label>
-        <select>
-            <option value="null">Select one:</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-        </select>
+        <fieldset id="html">
+            <input type="radio" name="html" value="1" checked>1
+            <input type="radio" name="html" value="2">2
+            <input type="radio" name="html" value="3">3
+            <input type="radio" name="html" value="4">4
+            <input type="radio" name="html" value="5">5
+        </fieldset>
 
         <label>5. Java</label>
-        <select>
-            <option value="null">Select one:</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-        </select>
+        <fieldset id="java">
+            <input type="radio" name="java" value="1" checked>1
+            <input type="radio" name="java" value="2">2
+            <input type="radio" name="java" value="3">3
+            <input type="radio" name="java" value="4">4
+            <input type="radio" name="java" value="5">5
+        </fieldset>
 
         <label>6. JavaScript</label>
-        <select>
-            <option value="null">Select one:</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-        </select>
+        <fieldset id="javascript">
+            <input type="radio" name="javascript" value="1" checked>1
+            <input type="radio" name="javascript" value="2">2
+            <input type="radio" name="javascript" value="3">3
+            <input type="radio" name="javascript" value="4">4
+            <input type="radio" name="javascript" value="5">5
+        </fieldset>
 
         <label>7. NoSQL</label>
-        <select>
-            <option value="null">Select one:</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-        </select>
+        <fieldset id="nosql">
+            <input type="radio" name="nosql" value="1" checked>1
+            <input type="radio" name="nosql" value="2">2
+            <input type="radio" name="nosql" value="3">3
+            <input type="radio" name="nosql" value="4">4
+            <input type="radio" name="nosql" value="5">5
+        </fieldset>
 
         <label>8. Perl</label>
-        <select>
-            <option value="null">Select one:</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-        </select>
+        <fieldset id="perl">
+            <input type="radio" name="perl" value="1" checked>1
+            <input type="radio" name="perl" value="2">2
+            <input type="radio" name="perl" value="3">3
+            <input type="radio" name="perl" value="4">4
+            <input type="radio" name="perl" value="5">5
+        </fieldset>
 
         <label>9. Python</label>
-        <select>
-            <option value="null">Select one:</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-        </select>
+        <fieldset id="python">
+            <input type="radio" name="python" value="1" checked>1
+            <input type="radio" name="python" value="2">2
+            <input type="radio" name="python" value="3">3
+            <input type="radio" name="python" value="4">4
+            <input type="radio" name="python" value="5">5
+        </fieldset>
 
         <label>10. Rust</label>
-        <select>
-            <option value="null">Select one:</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-        </select>
+        <fieldset id="rust">
+            <input type="radio" name="rust" value="1" checked>1
+            <input type="radio" name="rust" value="2">2
+            <input type="radio" name="rust" value="3">3
+            <input type="radio" name="rust" value="4">4
+            <input type="radio" name="rust" value="5">5
+        </fieldset>
 
         <label>11. SQL</label>
-        <select>
-            <option value="null">Select one:</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-        </select>
+        <fieldset id="sql">
+            <input type="radio" name="sql" value="1" checked>1
+            <input type="radio" name="sql" value="2">2
+            <input type="radio" name="sql" value="3">3
+            <input type="radio" name="sql" value="4">4
+            <input type="radio" name="sql" value="5">5
+        </fieldset>
 
         <label>12. Other</label>
-        <select>
-            <option value="null">Select one:</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-        </select>
+        <fieldset id="other">
+            <input type="radio" name="other" value="1" checked>1
+            <input type="radio" name="other" value="2">2
+            <input type="radio" name="other" value="3">3
+            <input type="radio" name="other" value="4">4
+            <input type="radio" name="other" value="5">5
+        </fieldset>
 
         <label>If you chose "Other" please specify which language you chose:</label>
-        <textarea name="comments"></textarea>
+        <textarea name="comments5"></textarea>
         
         <label>Comments. Please feel free to share your thoughts regarding the ratings you've given above.</label>
-        <textarea name="comments"></textarea>
-        <input type="submit" name="submit" value="Send it">
+        <textarea name="generalcomments"></textarea>
+        <input type="submit" id="btnsubmit" name="btnsubmit" value="Send it">
 
 
         </fieldset>

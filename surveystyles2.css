@@ -84,3 +84,7 @@ h2, h3, h4, h5, h6, p {
     color: navy;
 }
 
+
+input[type="radio"] {
+    margin-left:55px;
+}
