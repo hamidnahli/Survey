@@ -41,7 +41,7 @@ if (isset($_POST['name']) && isset($_POST['email']) ){
     VALUES ('$name','$email','$cshap','$cshap10','$css','$css10','$go','$go10','$html','$html10','$java','$java10','$javascript','$javascript10','$nosql','$nosql10','$perl','$perl10','$python','$python10','$rust','$rust10','$sql','$sql10','$other','$other10','$comments5','$coments10')";
     $res = mysqli_query($conn,$sql1);
     if ($res) {
-        header('Location: thankyou.html');
+        header('Location: surveythankyou.html');
     }else {
         echo "Your message could not be sent!";
     }
