@@ -18,6 +18,7 @@ $sqllang = filter_input(INPUT_POST, "sql", FILTER_VALIDATE_INT);
 $other = filter_input(INPUT_POST, "other", FILTER_VALIDATE_INT);
 $comments = filter_input(INPUT_POST, "comments", FILTER_VALIDATE_INT);
 
+// SQL server login/connect
 $host = "localhost";
 $dbname = "it115spring";
 $username = "root";
@@ -31,7 +32,7 @@ $conn = mysqli_connect(hostname: $host,
 if (mysqli_connect_errno()) {
     die("Connection error: " . mysqli_connect_error());
 }           
-        
+// SQL insert framework        
 $sql = "INSERT INTO `data` (name, body, priority, type)
         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
@@ -62,5 +63,5 @@ mysqli_stmt_bind_param($stmt, "sssssiiiiiccccc",
                     );
 
 mysqli_stmt_execute($stmt);
-
+// record data
 echo "Record saved.";
